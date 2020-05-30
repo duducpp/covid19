@@ -14,10 +14,13 @@ function runCrawler() {
 	setTimeout(runCrawler, 60 * 60 * 12);
 }
 
-
-//runCrawler();
+runCrawler();
 
 app.use('/api', api);
+
+app.all('/', (req, res) => {
+	res.redirect('/api');
+});
 
 app.listen(process.env.npm_package_configs_webserver_port, () => {
 	console.log(
