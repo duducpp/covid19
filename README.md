@@ -88,11 +88,11 @@ Exemplos:
 
 ### Tabela ``casos``
 
-| Nome        		| Tipo     	| Descrição  								| Valores																			|
-| ---------------- 	|----------	| ----------------------------------------	|--------------------------------------------------------------------------------	|
-|id					|int		|Identificador no nosso bando de dados		| [0-9] 																			|
-|identificador		|int		|Identificador em outros bancos de dados	| [0-9] 																			|
-|data_notificacao	|timestamp	|Data de notificação do caso				| yyyy-mm-dd hh:mm:ss 																|
+|Nome        		|Tipo     	|Descrição  								|Valores																			|
+|-------------------|-----------|-------------------------------------------|-----------------------------------------------------------------------------------|
+|id					|int		|Identificador no nosso bando de dados		|[0-9] 																				|
+|identificador		|int		|Identificador em outros bancos de dados	|[0-9] 																				|
+|data_notificacao	|timestamp	|Data de notificação do caso				|yyyy-mm-dd hh:mm:ss 																|
 |data_atualizacao	|timestamp	|Data de atualização no banco de dados 		|yyyy-mm-dd hh:mm:ss 																|
 |sexo				|tinyint	|Sexo										|**0**: Não informado; **1**: Masculino; **2**: Feminino;							|
 |idade				|tinyint	|Idade										|**-1**: Não informado; **>= 0**: Idade;											|
@@ -106,17 +106,14 @@ Exemplos:
 
 ### Tabela ``produtos``
 
-| Nome        		| Tipo    	| Descrição  								| Valores																			|
-| ----------------	|---------	| ----------------------------------------	| --------------------------------------------------------------------------------	|
-|id					|int		|Identificador no nosso bando de dados		| [0-9]			 																	|
-|loja				|int		|Identificador em outros bancos de dados	| [0-9] 																			|
-|nome				|timestamp	|Data de notificação do caso				| yyyy-mm-dd hh:mm:ss 																|
-|imagem				|timestamp	|Data de atualização no banco de dados 		| yyyy-mm-dd hh:mm:ss 																|
-|status				|tinyint	|Sexo										|**0**: Não informado; **1**: Masculino; **2**: Feminino;							|
-|preco				|tinyint	|Idade										|**-1**: Não informado; **>= 0**: Idade;											|
-|url				|char		|Sigla do estado							|**"NA"**: Não informado; **"A-Z"**: Estado;										|
-|data_atualizacao	|varchar	|Nome do municipio							|**"NA"**: Não informado; **[A-Za-z]**: Estado;										|
-|categoria			|int		|CEP										|**-1**: Não informado; **>= 0**: Cep												|
-|internacao			|tinyint	|Paciente foi internado						|**0**: Não informado; **1**: Sim; **2**: Não;										|
-|evolucao			|tinyint	|Evoluçao do paciente						|**0**: Não informado; **1**: Em acompanhamento; **2**: Recuperado; **3**: Obito;	|
-|uti				|tinyint	|Paciente usou uti							|**0**: Não informado; **1**: Sim; **2**: Não;										|
+|Nome        		|Tipo    	|Descrição  								|Valores																			|
+|-------------------|-----------|-------------------------------------------|-----------------------------------------------------------------------------------|
+|id					|int		|Identificador no nosso bando de dados		|[0-9]			 																	|
+|loja				|varchar	|Nome da loja em que o produto se encontra	|[A-Za-z]																			|
+|nome				|varchar	|Nome do produto							| 																					|
+|imagem				|varchar	|Url para imagem do produto 				|																					|
+|status				|tinyint	|Status										|**0**: Indisponivel; **1**: Disponivel;											|
+|preco				|double		|Preço										|																					|
+|url				|varchar	|Url										|																					|
+|data_atualizacao	|timestamp	|Data de atualização no banco de dados		|yyyy-mm-dd hh:mm:ss																|
+|categoria			|varchar	|Categoria									|**Alcool**; **Mascara**															|
