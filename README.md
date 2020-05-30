@@ -6,8 +6,9 @@
 
 1. Instale o NodeJS
 2. Vá até a pasta do projeto
-3. Execute o comando ``npm install``
-4. Configure a porta do webserver no *package.json*
+4. No windows execute o comando ``npm install --global --production windows-build-tools``
+5. Execute o comando ``npm install``
+6. Configure a porta do webserver no *package.json*
 
 ## Scripts
 
