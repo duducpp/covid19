@@ -1,0 +1,44 @@
+{
+	"name": "covid19",
+	"version": "1.0.0",
+	"description": "",
+	"author": "",
+	"license": "ISC",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon index.js",
+		"prod": "node index.js"
+	},
+	"configs": {
+		"webserver": {
+			"port": 80
+		},
+		"mysql": {
+			"host": "189.1.169.102",
+			"port": "3306",
+			"user": "unibh",
+			"password": "Covid-19",
+			"database": "covid19"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eduardomsb/covid19.git"
+	},
+	"bugs": {
+		"url": "https://github.com/eduardomsb/covid19/issues"
+	},
+	"homepage": "https://github.com/eduardomsb/covid19#readme",
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.3",
+		"csv-parser": "^2.3.2",
+		"express": "^4.17.1",
+		"iconv": "^3.0.0",
+		"mysql": "^2.18.1",
+		"node-file-cache": "^1.0.2",
+		"request": "^2.88.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.3"
+	}
+}
