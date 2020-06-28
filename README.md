@@ -19,7 +19,7 @@
 
 ## API
 
-### **``/caso``** 
+### **``/casos``** 
 
 Descrição: **Retorna os casos cadastrados no banco de dados**
 
